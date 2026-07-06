@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int num_digits(int n);
+
+int main(void) {
+
+    printf("%d\n", num_digits(1234567890));
+
+    return 0;
+}
+
+int num_digits(int n) {
+    int count = 0;
+    while (n > 0) {
+        n /= 10;
+        count++;
+        
+    }
+
+    return count;
+}
